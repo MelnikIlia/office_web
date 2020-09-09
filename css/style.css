@@ -87,6 +87,31 @@ h1 {
 	background-color: #BC1F1F;
 }
 
+.divider {
+	display: inline-block;
+	width: 20px;
+	border-top: 2px solid #000;
+}
+
+.divider--white {
+	border-top: 2px solid #fff;
+}
+
+.header {
+	height: 100vh;
+}
+
+.webp .header {
+	background-image: url(../img/hero.webp);
+	background-size: cover;
+}
+
+.no-webp .header,
+.no-js .header {
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+}
+
 .logo {
 	padding: 10px;
 	margin: -10px;
@@ -105,10 +130,10 @@ h1 {
 
 .nav {
 	padding-top: 30px;
+	padding-left: 15px;
 }
 
 .hero {
-	height: 730px;
 	padding-top: 110px;
 	color: #f6f9fa;
 }
@@ -133,38 +158,6 @@ h1 {
 .hero__button {
 	margin-top: 20px;
 	display: table;
-}
-
-.hero::before {
-	content:"";
-	display: block;
-	position:absolute;
-	height:100%;
-	width:100%;
-	top:0;
-	left:0;
-	z-index: -2;
-}
-
-.webp .hero::before {
-	background-image: url(../img/hero.webp);
-	background-size: cover;
-}
-
-.no-webp .hero::before,
-.no-js .hero::before {
-	background-image: url(../img/hero.jpg);
-	background-size: cover;
-}
-
-.divider {
-	display: inline-block;
-	width: 20px;
-	border-top: 2px solid #000;
-}
-
-.divider--white {
-	border-top: 2px solid #fff;
 }
 
 .features {
@@ -280,6 +273,7 @@ h1 {
 	transition-duration: 0.7s;
 	display: flex;
 	justify-content: center;
+	padding: 0 30px;
 }
 
 .carousel-indicators {
@@ -288,6 +282,11 @@ h1 {
 
 .carousel-item img,
 .carousel-item picture {
+	width: 100%;
+}
+
+.h-to-w-ratio img,
+.h-to-w-ratio picture {
 	width: auto;
 }
 
