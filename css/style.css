@@ -288,7 +288,7 @@ h1 {
 
 .carousel-item img,
 .carousel-item picture {
-	width: 100%;
+	width: auto;
 }
 
 .about-table {
