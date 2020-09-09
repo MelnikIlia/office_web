@@ -478,11 +478,11 @@ h1 {
 }
 
 .footer__content {
-	margin-bottom: 0;
 	font-size: 13px;
 	letter-spacing: 0.08em;
 	line-height: 22px;
 	color: #76767b;
+	text-align: center;
 }
 
 @media screen and (min-width: 520px) {
@@ -533,6 +533,10 @@ h1 {
 		left: unset;
 		bottom: unset;
 		transform-origin: right;
+	}
+
+	.footer__content {
+		margin-bottom: 0;
 	}
 }
 
